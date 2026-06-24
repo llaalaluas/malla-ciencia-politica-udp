@@ -147,8 +147,7 @@ const COURSES = [
     area: "general",
     prereq: ["ingles_1"],
     requireApproved: true
-  }
-];
+  },
 // SEMESTRE 4
 {
   id: "met_cuant_2",
