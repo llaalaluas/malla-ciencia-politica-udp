@@ -397,4 +397,4 @@ const COURSES = [
   prereq: [],
   requireApproved: false
 }
-};
+];
