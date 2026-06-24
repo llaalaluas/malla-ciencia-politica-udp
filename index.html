@@ -1,1 +1,104 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Interactiva Ciencia Política UDP</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="data.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+<header>
+    <h1>Malla Interactiva Ciencia Política UDP</h1>
+    <div class="stats">
+        <div>
+            <strong>Progreso</strong>
+            <span id="progressText">0%</span>
+        </div>
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+    </div>
+    <div class="actions">
+        <button id="exportBtn">Exportar Progreso</button>
+        <button id="importBtn">Importar Progreso</button>
+        <button id="resetBtn">Reiniciar</button>
+        <button id="darkModeBtn">Modo Oscuro</button>
+    </div>
+    <input type="file" id="importFile" hidden>
+</header>
+<main>
+    <section id="summary">
+        <div class="card">
+            <h3>Aprobados</h3>
+            <span id="approvedCount">0</span>
+        </div>
+        <div class="card">
+            <h3>Cursados</h3>
+            <span id="takenCount">0</span>
+        </div>
+        <div class="card">
+            <h3>Pendientes</h3>
+            <span id="pendingCount">0</span>
+        </div>
+        <div class="card">
+            <h3>Total</h3>
+            <span id="totalCount">0</span>
+        </div>
+    </section>
+    <section id="curriculum">
+        <div class="semester-column">
+            <h2>Semestre 1</h2>
+            <div id="semester-1"></div>
+        </div>
+        <div class="semester-column">
+            <h2>Semestre 2</h2>
+            <div id="semester-2"></div>
+        </div>
+        <div class="semester-column">
+            <h2>Semestre 3</h2>
+            <div id="semester-3"></div>
+        </div>
+        <div class="semester-column">
+            <h2>Semestre 4</h2>
+            <div id="semester-4"></div>
+        </div>
+        <div class="semester-column">
+            <h2>Semestre 5</h2>
+            <div id="semester-5"></div>
+        </div>
+        <div class="semester-column">
+            <h2>Semestre 6</h2>
+            <div id="semester-6"></div>
+        </div>
+        <div class="semester-column">
+            <h2>Semestre 7</h2>
+            <div id="semester-7"></div>
+        </div>
+        <div class="semester-column">
+            <h2>Semestre 8</h2>
+            <div id="semester-8"></div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="legend">
+        <div><span class="legend-color metodologia"></span> Metodología</div>
+        <div><span class="legend-color comparada"></span> Política Comparada</div>
+        <div><span class="legend-color ri"></span> Relaciones Internacionales</div>
+        <div><span class="legend-color pp"></span> Políticas Públicas</div>
+        <div><span class="legend-color teoria"></span> Teoría Política</div>
+        <div><span class="legend-color economia"></span> Economía Política</div>
+        <div><span class="legend-color cfg"></span> CFG / Minor</div>
+        <div><span class="legend-color odp"></span> Desarrollo Profesional</div>
+    </div>
+    <p>
+        Estados:
+        ⚪ No cursado |
+        🟡 Cursado |
+        🟢 Aprobado
+    </p>
+</footer>
+</body>
+</html>
