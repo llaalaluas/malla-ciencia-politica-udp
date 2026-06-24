@@ -140,14 +140,14 @@ const COURSES = [
     prereq: ["tp_1"],
     requireApproved: false
   },
-  {
+ {
     id: "ingles_2",
     name: "Inglés II",
     semester: 3,
     area: "general",
     prereq: ["ingles_1"],
     requireApproved: true
-  },
+},
 // SEMESTRE 4
 {
   id: "met_cuant_2",
